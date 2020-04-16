@@ -1,5 +1,5 @@
 ---
-title: Welcome
+title: 欢迎来到我的博客
 ---
 
 This is the **Edition** template from [CloudCannon](http://cloudcannon.com/).
