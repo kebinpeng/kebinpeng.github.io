@@ -3,7 +3,7 @@ title: OpenCV 双目测距踩坑
 type: major
 ---
 
-ChatApp introduces media support! Send images, videos and documents to your contacts.
+开个博客记录一下双目测距的实现过程，网上其他博客基本都是缺内容的，不详细。我来详细记录一下具体过程
 
 **Features:**
 
