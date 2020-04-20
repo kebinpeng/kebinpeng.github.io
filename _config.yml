@@ -50,6 +50,8 @@ defaults:
       path: ""
       type: "posts"
     values:
+      seo:
+        type: Article
       _comments:
         type: Marks the impact of this release
 
