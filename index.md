@@ -2,9 +2,7 @@
 title: 欢迎来到我的博客
 ---
 
-This is the **Edition** template from [CloudCannon](http://cloudcannon.com/).
-**Edition** is perfect for documenting your product, application or service.
-It's populated with example content to give you some ideas.
+我的研究方向主要是计算机视觉，包括三维重建和立体视觉。现阶段（2020/04/20）主要集中在双目测距，摄像机运动估计。
 
 ChatApp is a fictional chat application for sending messages and media to others.
 Teams and friend groups would use ChatApp to stay up to date if it existed.
