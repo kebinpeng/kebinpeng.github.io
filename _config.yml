@@ -5,7 +5,7 @@ title: 计算机视觉和算法
 url: "https://kebinpeng.github.io/"
 baseurl:
 google_analytics_key:
-show_full_navigation: true
+show_full_navigation: false
 
 sidebar: true # 是否开启侧边栏
 
