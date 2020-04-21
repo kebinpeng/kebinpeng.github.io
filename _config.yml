@@ -4,13 +4,13 @@
 title: 计算机视觉和算法
 url: "https://kebinpeng.github.io/"
 baseurl:
-google_analytics_key:
+google_analytics_key: true
 show_full_navigation: false
 
 sidebar: true # 是否开启侧边栏
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: /siteicon.png
+logo: /opencv.png
 description: Product documentation template for Jekyll.
 author:
   name:
@@ -20,6 +20,11 @@ social:
   name: Edition Template
   links:
     - https://github.com/CloudCannon/edition-jekyll-template
+
+date:       date   # 覆盖文章名中的日期
+category:   blog   # 文章的类别
+description: description
+published:  true   # default true 设置 “false” 后，文章不会显示
 
 # -----
 # Build
