@@ -29,18 +29,13 @@ timezone: America/Chicago
 permalink: pretty
 language:  zh-CN
 
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      comments: true
-comments:
-  provider: "utterances"
-  utterances:
-    theme: "github-light" # "github-dark"
-    issue_term: "pathname"
+utteranc:
+  enable: true
+  repo: kebinpeng/kebinpeng.github.io
+  pathname: pathname
+  # theme: github-light,github-dark,github-dark-orange
+  theme: github-light
+  cdn: https://utteranc.es/client.js
 
 
 plugins:
