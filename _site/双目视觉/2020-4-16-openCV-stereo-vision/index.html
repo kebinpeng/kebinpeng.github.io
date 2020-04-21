@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+        
+		<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Opencv Stereo Vision | 计算机视觉和算法</title>
+<meta name="generator" content="Jekyll v3.8.4" />
+<meta property="og:title" content="Opencv Stereo Vision" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="title: OpenCV 双目测距踩坑 type: major category: 双目视觉 date: 2020-04-21 18:20:34 +0000" />
+<meta property="og:description" content="title: OpenCV 双目测距踩坑 type: major category: 双目视觉 date: 2020-04-21 18:20:34 +0000" />
+<link rel="canonical" href="http://localhost:4000/%E5%8F%8C%E7%9B%AE%E8%A7%86%E8%A7%89/2020-4-16-openCV-stereo-vision/" />
+<meta property="og:url" content="http://localhost:4000/%E5%8F%8C%E7%9B%AE%E8%A7%86%E8%A7%89/2020-4-16-openCV-stereo-vision/" />
+<meta property="og:site_name" content="计算机视觉和算法" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-04-16T00:00:00+00:00" />
+<script type="application/ld+json">
+{"@type":"Article","url":"http://localhost:4000/%E5%8F%8C%E7%9B%AE%E8%A7%86%E8%A7%89/2020-4-16-openCV-stereo-vision/","headline":"Opencv Stereo Vision","dateModified":"2020-04-21T18:20:34+00:00","datePublished":"2020-04-16T00:00:00+00:00","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/opencv.png"}},"description":"title: OpenCV 双目测距踩坑 type: major category: 双目视觉 date: 2020-04-21 18:20:34 +0000","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+		<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="计算机视觉和算法" />
+
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Open+Sans:400,400italic,600,600italic,700,700italic|Inconsolata:400,700">
+		<link rel="stylesheet" href="/css/main.css">
+		<link rel="apple-touch-icon" href="/opencv.png"> <!--apple-touch-icon-->
+        <link rel="icon" type="image/png" href="/images/opencv.png" sizes="192x192"> <!--touch-icon.png-->
+		<link rel="icon" type="image/png" href="/images/opencv.png">
+
+		
+
+      
+
+	</head>
+
+	<body>
+
+        <p class="post-meta">
+        <time datetime="2020-04-16T00:00:00+00:00" itemprop="datePublished">Apr 16, 2020</time>
+        
+        (Updated: <time datetime="2020-04-21T18:20:34+00:00" itemprop="dateModified">Apr 21, 2020</time>)
+        
+
+
+
+		<header>
+			<h1>
+				<a href="/"><img src="/images/emblem.svg" width="40" height="40" alt="计算机视觉和算法 logo"></a>
+				计算机视觉和算法
+				<button type="button" class="open-nav" id="open-nav"></button>
+			</h1>
+
+			<form action="/search/" method="get">
+				<input type="text" name="q" id="search-input" placeholder="Search" autofocus>
+				<input type="submit" value="Search" style="display: none;">
+			</form>
+
+			<nav >
+				<ul>
+					<li class="nav-item top-level ">
+						
+						<a href="/">欢迎来到我的博客</a>
+					</li>
+				</ul>
+
+				<ul>
+					
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/%E5%8F%8C%E7%9B%AE%E8%A7%86%E8%A7%89/2020-4-16-openCV-stereo-vision/"></a>
+							<ul>
+								
+									<li class="nav-item current"><a href="/%E5%8F%8C%E7%9B%AE%E8%A7%86%E8%A7%89/2020-4-16-openCV-stereo-vision/">Opencv Stereo Vision</a></li>
+								
+							</ul>
+						</li>
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/%E5%8F%8C%E7%9B%AE%E8%A7%86%E8%A7%89/2020-4-16-openCV-stereo-vision2/">双目视觉</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/%E5%8F%8C%E7%9B%AE%E8%A7%86%E8%A7%89/2020-4-16-openCV-stereo-vision2/">OpenCV 双目测距踩坑</a></li>
+								
+									<li class="nav-item "><a href="/%E5%8F%8C%E7%9B%AE%E8%A7%86%E8%A7%89/2020-4-16-openCV-stereo-vision3/">OpenCV 双目测距踩坑</a></li>
+								
+									<li class="nav-item "><a href="/%E5%8F%8C%E7%9B%AE%E8%A7%86%E8%A7%89/2020-4-16-openCV-stereo-vision4/">OpenCV 双目测距踩坑</a></li>
+								
+									<li class="nav-item "><a href="/%E5%8F%8C%E7%9B%AE%E8%A7%86%E8%A7%89/2020-4-16-openCV-stereo-vision5/">OpenCV 双目测距踩坑</a></li>
+								
+									<li class="nav-item "><a href="/%E5%8F%8C%E7%9B%AE%E8%A7%86%E8%A7%89/2020-4-16-openCV-stereo-vision1/">OpenCV 双目测距踩坑</a></li>
+								
+							</ul>
+						</li>
+					
+				</ul>
+
+				<ul>
+					<li class="nav-item top-level ">
+						
+						<a href="/changelog/">Change Log</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="main">
+			<div class="page-header">
+				<h2>计算机视觉和算法</h2>
+				<h3>Opencv Stereo Vision</h3>
+			</div>
+			<article class="content">
+				<hr />
+<p>title: OpenCV 双目测距踩坑
+type: major
+category: 双目视觉
+date: 2020-04-21 18:20:34 +0000</p>
+
+<p>开个博客记录一下双目测距的实现过程，网上其他博客基本都是缺内容的，不详细。我来详细记录一下具体过程</p>
+
+<p><strong>Features:</strong></p>
+
+<ul>
+  <li>Image support</li>
+  <li>Video support</li>
+  <li>Document support</li>
+</ul>
+
+<p><strong>Fixes:</strong></p>
+
+<ul>
+  <li>Edge case contact syncing issue</li>
+  <li>All memory leaks obliterated</li>
+</ul>
+
+			</article>
+		</section>
+
+		<script>
+			document.getElementById("open-nav").addEventListener("click", function () {
+				document.body.classList.toggle("nav-open");
+			});
+		</script>
+
+        <!-- Gitalk 评论 start  -->
+
+               <script src="https://utteranc.es/client.js"
+		       repo="kebinpeng/kebinpeng.github.io"
+		       issue-term="pathname"
+		       theme="github-light"
+		       crossorigin="anonymous"
+		       async>
+               </script>
+        <!-- Gitalk end -->
+	</body>
+</html>
