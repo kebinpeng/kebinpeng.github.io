@@ -1,5 +1,5 @@
 ---
-title: OpenCV 双目测距踩坑
+title: {{OpenCV 双目测距踩坑}}
 type: major
 category: 双目视觉
 date: {{ page.date | date: "%Y-%m-%d" }}
