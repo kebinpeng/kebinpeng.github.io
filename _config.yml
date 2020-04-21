@@ -30,7 +30,7 @@ published:  true   # default true 设置 “false” 后，文章不会显示
 # Build
 
 timezone: America/Chicago
-exclude: vendor
+exclude: [vendor]
 permalink: pretty
 language:  zh-CN
 
