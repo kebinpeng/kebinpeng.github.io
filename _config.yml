@@ -36,6 +36,12 @@ defaults:
       type: posts
     values:
       comments: true
+comments:
+  provider: "utterances"
+  utterances:
+    theme: "github-light" # "github-dark"
+    issue_term: "pathname"
+
 
 plugins:
   - jekyll-sitemap
