@@ -2,10 +2,11 @@
 # Site
 
 title: 计算机视觉和算法
-url: "https://kebinpeng.github.io/"
+url: "http://localhost:4000" #"https://kebinpeng.github.io/"
 baseurl:
 google_analytics_key: true
 show_full_navigation: false
+plugins_dir: ./_plugins
 
 sidebar: true # 是否开启侧边栏
 
@@ -34,21 +35,14 @@ timezone: America/Chicago
 permalink: pretty
 language:  zh-CN
 
-utteranc:
-  enable: true
-  repo: kebinpeng/kebinpeng.github.io
-  pathname: pathname
-  # theme: github-light,github-dark,github-dark-orange
-  theme: github-light
-  cdn: https://utteranc.es/client.js
-
+gems:
+  - jekyll-last-modified-at
 
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-feed
-  - jekyll-last-modified-at
-
+  
 exclude:
   - Gemfile
   - Gemfile.lock
