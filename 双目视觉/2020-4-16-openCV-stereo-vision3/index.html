@@ -4,9 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        
-        
+
 		<!-- Begin Jekyll SEO tag v2.5.0 -->
 <title>OpenCV 双目测距踩坑 | 计算机视觉和算法</title>
 <meta name="generator" content="Jekyll v3.8.4" />
@@ -14,16 +12,16 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="开个博客记录一下双目测距的实现过程，网上其他博客基本都是缺内容的，不详细。我来详细记录一下具体过程" />
 <meta property="og:description" content="开个博客记录一下双目测距的实现过程，网上其他博客基本都是缺内容的，不详细。我来详细记录一下具体过程" />
-<link rel="canonical" href="http://localhost:4000/%E5%8F%8C%E7%9B%AE%E8%A7%86%E8%A7%89/2020-4-16-openCV-stereo-vision3/" />
-<meta property="og:url" content="http://localhost:4000/%E5%8F%8C%E7%9B%AE%E8%A7%86%E8%A7%89/2020-4-16-openCV-stereo-vision3/" />
+<link rel="canonical" href="https://kebinpeng.github.io//%E5%8F%8C%E7%9B%AE%E8%A7%86%E8%A7%89/2020-4-16-openCV-stereo-vision3/" />
+<meta property="og:url" content="https://kebinpeng.github.io//%E5%8F%8C%E7%9B%AE%E8%A7%86%E8%A7%89/2020-4-16-openCV-stereo-vision3/" />
 <meta property="og:site_name" content="计算机视觉和算法" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-04-16T00:00:00+00:00" />
 <script type="application/ld+json">
-{"@type":"Article","url":"http://localhost:4000/%E5%8F%8C%E7%9B%AE%E8%A7%86%E8%A7%89/2020-4-16-openCV-stereo-vision3/","headline":"OpenCV 双目测距踩坑","dateModified":"2020-04-20T04:19:20+00:00","datePublished":"2020-04-16T00:00:00+00:00","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/opencv.png"}},"description":"开个博客记录一下双目测距的实现过程，网上其他博客基本都是缺内容的，不详细。我来详细记录一下具体过程","@context":"http://schema.org"}</script>
+{"@type":"Article","url":"https://kebinpeng.github.io//%E5%8F%8C%E7%9B%AE%E8%A7%86%E8%A7%89/2020-4-16-openCV-stereo-vision3/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://kebinpeng.github.io//opencv.png"}},"headline":"OpenCV 双目测距踩坑","datePublished":"2020-04-16T00:00:00+00:00","dateModified":"2020-04-22T05:18:01+00:00","description":"开个博客记录一下双目测距的实现过程，网上其他博客基本都是缺内容的，不详细。我来详细记录一下具体过程","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-		<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="计算机视觉和算法" />
+		<link type="application/atom+xml" rel="alternate" href="https://kebinpeng.github.io//feed.xml" title="计算机视觉和算法" />
 
 		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Open+Sans:400,400italic,600,600italic,700,700italic|Inconsolata:400,700">
 		<link rel="stylesheet" href="/css/main.css">
@@ -33,20 +31,13 @@
 
 		
 
-      
+        <img src="/Utah_teapot_simple_2.png" width="300" height="500" >
+        <img src="/Stanford_bunny_qem.png" width="550" height="500" >
+        <img src="/0.png" width="350" height="400" >
 
 	</head>
 
 	<body>
-
-        <p class="post-meta">
-        <time datetime="2020-04-16T00:00:00+00:00" itemprop="datePublished">Apr 16, 2020</time>
-        
-        (Updated: <time datetime="2020-04-20T04:19:20+00:00" itemprop="dateModified">Apr 20, 2020</time>)
-        
-
-
-
 		<header>
 			<h1>
 				<a href="/"><img src="/images/emblem.svg" width="40" height="40" alt="计算机视觉和算法 logo"></a>
@@ -70,20 +61,12 @@
 				<ul>
 					
 					
-						<li class="nav-item top-level ">
-							
-							<a href="/%E5%8F%8C%E7%9B%AE%E8%A7%86%E8%A7%89/2020-4-16-openCV-stereo-vision/"></a>
-							<ul>
-								
-									<li class="nav-item "><a href="/%E5%8F%8C%E7%9B%AE%E8%A7%86%E8%A7%89/2020-4-16-openCV-stereo-vision/">Opencv Stereo Vision</a></li>
-								
-							</ul>
-						</li>
-					
 						<li class="nav-item top-level current">
 							
-							<a href="/%E5%8F%8C%E7%9B%AE%E8%A7%86%E8%A7%89/2020-4-16-openCV-stereo-vision2/">双目视觉</a>
+							<a href="/%E5%8F%8C%E7%9B%AE%E8%A7%86%E8%A7%89/2020-4-16-openCV-stereo-vision1/">双目视觉</a>
 							<ul>
+								
+									<li class="nav-item "><a href="/%E5%8F%8C%E7%9B%AE%E8%A7%86%E8%A7%89/2020-4-16-openCV-stereo-vision1/">OpenCV 双目测距踩坑</a></li>
 								
 									<li class="nav-item "><a href="/%E5%8F%8C%E7%9B%AE%E8%A7%86%E8%A7%89/2020-4-16-openCV-stereo-vision2/">OpenCV 双目测距踩坑</a></li>
 								
@@ -93,7 +76,7 @@
 								
 									<li class="nav-item "><a href="/%E5%8F%8C%E7%9B%AE%E8%A7%86%E8%A7%89/2020-4-16-openCV-stereo-vision5/">OpenCV 双目测距踩坑</a></li>
 								
-									<li class="nav-item "><a href="/%E5%8F%8C%E7%9B%AE%E8%A7%86%E8%A7%89/2020-4-16-openCV-stereo-vision1/">OpenCV 双目测距踩坑</a></li>
+									<li class="nav-item "><a href="/%E5%8F%8C%E7%9B%AE%E8%A7%86%E8%A7%89/2020-4-16-openCV-stereo-vision/">OpenCV 双目测距踩坑</a></li>
 								
 							</ul>
 						</li>
