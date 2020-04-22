@@ -7,4 +7,9 @@ group :jekyll_plugins do
   gem 'jekyll-seo-tag', '2.5.0'
   gem 'jekyll-sitemap', '1.2.0'
   gem "jekyll-last-modified-at"
+
+  gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
+  gem 'tzinfo'
+
+
 end
