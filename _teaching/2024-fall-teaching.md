@@ -1,7 +1,7 @@
 ---
 title: "2024 Fall"
 collection: teaching
-type: "Undergraduate course"
+type: "Undergraduate"
 permalink: /teaching/2024-fall-teaching
 venue: "ECU, CS"
 date: 2024-8-19
