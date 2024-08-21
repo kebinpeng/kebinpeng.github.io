@@ -8,6 +8,6 @@ date: 2025-01-01
 location: "City, Country"
 ---
 
-Artificial intelligence  
-Software Engineering
+Artificial intelligence<br>
+Software Engineering<br>  
 ======
