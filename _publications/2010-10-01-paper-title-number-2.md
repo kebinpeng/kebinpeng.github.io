@@ -2,7 +2,7 @@
 title: "Tree-structure CNN for automated theorem proving"
 collection: publications
 category: conferences
-permalink: /publication/2010-10-01-paper-title-number-2
+;permalink: /publication/2010-10-01-paper-title-number-2
 excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
 date: 2017-01-01
 venue: 'Neural Information Processing: 24th International Conference, ICONIP 2017, Guangzhou, China, November 14-18, 2017, Proceedings, Part II 24'
