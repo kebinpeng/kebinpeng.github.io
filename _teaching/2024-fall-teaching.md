@@ -8,5 +8,5 @@ date: 2024-8-19
 location: "City, Country"
 ---
 
-Priciples of Programming Languages
+- Priciples of Programming Languages
 
