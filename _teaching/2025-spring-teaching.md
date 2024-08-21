@@ -9,5 +9,5 @@ location: "City, Country"
 ---
 
 Artificial intelligence<br>
-Software Engineering<br>  
+Software Engineering<br>
 ======
