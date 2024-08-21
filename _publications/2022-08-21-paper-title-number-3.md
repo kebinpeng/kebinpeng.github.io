@@ -3,7 +3,7 @@ title: "PMPNet: Pixel Movement Prediction Network for Monocular Depth Estimation
 collection: publications
 category: conferences
 permalink: /publication/2022-08-21-paper-title-number-3
-excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
+;excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
 date: 2022-08-21
 venue: '2022 26th International Conference on Pattern Recognition (ICPR)'
 ;slidesurl: 'http://academicpages.github.io/files/slides3.pdf'
