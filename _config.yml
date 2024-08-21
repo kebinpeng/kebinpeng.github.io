@@ -7,7 +7,7 @@
 # server process.
 
 # Basic Site Settings
-locale                   : "East Carolina University"
+locale                   : "North Carolina"
 title                    : "Kebin Peng / Ph.D."
 title_separator          : "-"
 name                     : &name "Your Name"
@@ -22,11 +22,11 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Kebin Peng"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  #bio              : "Short biography for the left-hand sidebar"
+  #location         : "Earth"
+  employer         : "East Carolina University"
   uri              : # URL
   email            : "none@example.org" 
 
