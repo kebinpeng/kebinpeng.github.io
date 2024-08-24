@@ -12,3 +12,6 @@ I am an Assistant Professor in the Department of Computer Science at East Caroli
 Before joining ECU, I worked as a Senior Software Engineer (C++) at MathWorks (2023-2024) and previously interned as a Computer Vision Scientist at Samsung Research America.
 
 I earned my Ph.D. from the Department of Computer Science at the University of Texas at San Antonio (2019-2023) and my master's degree from Beihang University.
+
+---
+# Research
