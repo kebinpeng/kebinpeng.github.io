@@ -26,7 +26,9 @@ My research involves
 
 # Service
 Service as a reviewer or program committee member of the following journals or conferences
-- Conference on Computer Vision and Pattern Recognition (CVPR) 2022 2023
+- Neural Information Processing Systems (NeurIPS) 2024
+- AAAI Conference on Artificial Intelligence (AAAI) 2024
+- Conference on Computer Vision and Pattern Recognition (CVPR) 2022 2023 2024
 - European Conference on Computer Vision (ECCV) 2024
 - International Conference on Computer Vision (ICCV) 2023
 - The British Machine Vision Conference (BMVC) 2023 2024
