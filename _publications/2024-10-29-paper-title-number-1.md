@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/2022-10-01-paper-title-number-1
 ;excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2024-10-029
+date: 2024-10-29
 venue: '39th IEEE/ACM International Conference on Automated Software Engineering'
 slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://dl.acm.org/doi/10.1145/3691621.3694957'
