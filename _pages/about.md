@@ -11,7 +11,7 @@ I am an Assistant Professor in the Department of Computer Science at East Caroli
 
 I earned my Ph.D. from the Department of Computer Science at the University of Texas at San Antonio (2019-2023) and my master's degree from Beihang University.
 
-<h3>I DO NOT have ANY Open Opsitions for Ph.D., PLEASE DO NOT send me any email about Ph.D Application</h3>
+<h3>I do not have any open positions for Ph.D.</h3>
 
 ---
 
